@@ -15,10 +15,10 @@
     document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
   </script>
   <link rel="stylesheet" src="style.css">
-  <title>Baldi's Basics Classic</title>
-  <link rel="icon" type="image/x-icon" href="remastered_logo.png">
+  <title>Baldi's Basics Plus</title>
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="plus_logo.png">
 </head>
 <body>
   <div>
@@ -176,9 +176,15 @@
     anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
   </script>
   </div>
-  <img src="infoclassic.svg" width="30%" style="margin-top: 25px; margin-left: 50px;"></img>
+  <img src="infoplus.svg" width="35%" style="margin-top: 25px; margin-left: 50px;"></img>
   <br>
-  <md-filled-button id="openDialogButton" style="width: 1600px; margin-left: 50px; --md-sys-color-primary:#00c403;">Install</md-filled-button>
+  <md-list style="margin-left: 50px; width: 1550px; --md-sys-color-surface: #ffffff;">
+    <md-list-item>
+      You don't have permission to download this game.
+      <a style="color: #00c538;" href="kickstarter.html" target="_blank" referrerpolicy="origin" rel="nofollow noopener">Learn more</a>
+      <md-icon slot="start" style="width: 56px">warning</md-icon>
+    </md-list-item>
+  </md-list>
   <form style="margin-left: 50px;">
     <div>
       <h1 class="md-typescale-body-large" style="margin-right: 10px;">About the game</h1>
@@ -186,12 +192,24 @@
         <md-icon>arrow_forward</md-icon>
       </md-icon-button>
     </div>
-    <p class="md-typescale-body-large">The game is not what it seems...</p>
-    <p class="md-typescale-body-large">Inspired by creepy/bad edutainment games from the 90s, (Sonic's Schoolhouse, I.M. Meen, 3D Dinosaur Adventure: Save the Dinosaurs), Baldi's Basics is a meta horror game that's really weird, with no real educational value to be found. Collect all 7 of the notebooks and escape the school, all while avoiding Baldi. Baldi has many friends in the school that will slow down your progress and put you at risk of being caught, so learn how each character works and how you can avoid their attention. Find and use items to your advantage. Oh, and finally, try not to get the quiz answers wrong... Each wrong answer makes Baldi angrier...</p>
+    <p class="md-typescale-body-large">
+      The game is not what it seems...
+      <br>
+      <br>
+      Baldi's Basics™ Plus is an active stealth roguelike that parodies cheap '90s edutainment with a subtle horror twist! Try to collect all the notebooks in each level as Baldi uses his incredible hearing to track you down in a game of "Hide & Seek". As you do so you will encounter strange characters, find useful items, go on field trips and more inside Baldi’s ever changing Super Schoolhouse, and as you explore the game itself you'll start to realize it is not what it seems...
+    </p>
+    <md-list style="width: 1550px; --md-sys-color-surface: #a5ffbe;">
+      <md-list-item>
+        Get future update as soon as possible
+        <md-icon slot="start" style="width: 56px">new_releases</md-icon>
+        <p class="md-typescale-body-large">Get permission to download pre-releases, demo games, and so much more for only $10 when purchasing Kickstarter membership!</p>
+        <md-filled-button style="--md-sys-color-primary:#00b203;" onclick="window.open('kickstarter.html')">Learn more</md-filled-button>
+      </md-list-item>
+    </md-list>
     <h2 class="md-typescale-body-large">Game information and requirements</h2>
     <md-list style="width: 1550px; --md-sys-color-surface: #f8fffa;">
       <md-list-item>
-        Version: 1.4.3
+        Version: 0.7 Pre-release (plan to available in Sep 2)
         <md-icon slot="start" style="width: 56px">info</md-icon>
       </md-list-item>
       <md-list-item>
@@ -213,12 +231,12 @@
     </md-list>
     <p class="md-typescale-body-large" style="font-size: 110%;"><b>You can also check for other games</b></p>
     <div>
-      <img width="20%" src="cards/remastered.png" href="remastered.html"></img>
-      <img width="20%" style="margin-left: 10px;" src="cards/plus.png" href="plus"></img>
-      <img width="20%" style="margin-left: 10px;" src="cards/plus-pre.png"></img>
+      <img width="20%" href="classic.html" src="cards/classic.png"></img>
+      <img width="20%" href="remastered.html" style="margin-left: 10px;" src="cards/remastered.png"></img>
+      <img width="20%" href="plus.html" style="margin-left: 10px;" src="cards/plus-pre.png"></img>
     </div>
     <p class="md-typescale-body-large" style="font-size: 110%;"><b>Screenshot</b></p>
-    <iframe src="screenshots/screenshot.html" width="1500px" height="300px"></iframe>
+    <iframe src="screenshots/plus.html" width="1500px" height="300px"></iframe>
     <p class="md-typescale-body-large" style="font-size: 110%;"><b>Contact</b></p>
     <md-list style="width: 1550px; --md-sys-color-surface: #f8fffa;">
       <md-list-item>
@@ -257,13 +275,13 @@
         <md-radio style="--md-sys-color-primary:#00c403;" id="option3" name="options" value="Option 3">Option 3</md-radio>
         <label for="option3">MacOS (coming soon!)</label>
         <br><br>
-        <md-radio style="--md-sys-color-primary:#00c403;" id="option4" name="options" value="Option 4" onclick="window.open('https://drive.usercontent.google.com/download?id=1BrsswpnQHPF7IHSk8tgZjGYDqT9S4nCP&export=download&authuser=0')">Option 3</md-radio>
-        <label for="option4">Android (click to download)</label>
+        <md-radio style="--md-sys-color-primary:#00c403;" id="option4" name="options" value="Option 4" disabled>Option 3</md-radio>
+        <label for="option4">Android (planned)</label>
       </md-radio-group>
     </div>
     <div slot="actions">
       <md-text-button id="cancelButton" style="--md-sys-color-primary:#00c403;">Cancel</md-text-button>
-      <md-filled-button id="confirmButton" style="--md-sys-color-primary:#00c403;" onclick="window.open('https://drive.usercontent.google.com/download?id=1xozVLHqgb_U1DpJmeOAl6I38wOsBOYfn&export=download&authuser=0')">Confirm</md-filled-tonal-button>
+      <md-filled-button id="confirmButton" style="--md-sys-color-primary:#00c403;" onclick="window.open('https://drive.usercontent.google.com/download?id=1J2DijTq-zuSjc70lb2rwJP83sD3Qx55z&export=download&authuser=0')">Confirm</md-filled-tonal-button>
     </div>
   </md-dialog>
   <style>

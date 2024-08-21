@@ -1,0 +1,133 @@
+<title>V0.7 Status Update</title>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: Roboto;
+        font-weight: bold;
+        src: url('fonts/Roboto-Bold.ttf');
+    }
+
+    p {
+        font-family: Roboto;
+    }
+
+    h1 {
+        font-family: Roboto;
+    }
+
+    h2 {
+        font-family: Roboto;
+    }
+
+    a {
+        font-family: Roboto;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div>
+      <md-icon-button id="menu" href="classic.html">
+        <md-icon>arrow_back</md-icon>
+      </md-icon-button>
+    </div>
+    <h1 style="margin-left: 25px;" class="Roboto">Development Log: V0.7 Status Update</h1>
+    <div class="container" style="margin-left: 25px;">
+      <p style="font-size: 110%;">By Micah McGonigal - Basically Games!</p>
+      <p>
+        Hey everyone, in this status update I'd like to discuss the new version of field trips that will be added in version 0.7 of Baldi's Basics Plus! Camping will be the first to be re-added, with the farm to follow in a future update, and then brand new ones on occasion after that. Before we can head out though, first you'll need to find...
+      </p>
+      <br>
+      <h2>
+        <b>The Bus Pass</b>
+      </h2>
+      <p>
+        The buss pass is a new item that will be added in version 0.7 which will be required to go on a field trip. One will always be found in level 2, so if you want to go on a field trip be sure you find it and take it with you to the next level! You can get some big rewards from field trips, so it will be worth the effort.
+      </p>
+      <img width="45%" style="margin-left: 445px;" src="0.7 1.png"></img>
+      <p>
+        Once you reach The Pitstop for level 3, you'll find Baldi outside waiting to take you on a field trip! If you have a bus pass in your inventory, you'll be able to click on the bus door to be taken to a field trip hub area.
+      </p>
+      <h2>
+        <b>Field Trip Hubs</b>
+      </h2>
+      <p>
+        The field trip hub areas are freely explorable spaces where you'll be able to find minigames to play and take a break from the main game. You'll also be able to find and talk to Baldi who will explain how each minigame is played, which will make instructions less intrusive than they were in the previous iteration of field trips.
+      </p>
+      <img width="45%" style="margin-left: 445px;" src="0.7 2.png"></img>
+      <p>
+        Many of you missed when field trips offered 3D spaces to explore, so for some time I'd been thinking of a way I could bring that element of the old field trips back, and this seemed like a good solution! While the minigames themselves won't take place in the hubs, these spaces still provide a nice change of scenery from the rest of the game.
+      </p>
+      <h2>
+        <b>Minigames</b>
+      </h2>
+      <p>
+        Once in a hub, you'll be able to freely explore and find not one, but two minigames to play! By offering two per-field trip, you're less likely to end up getting forced to play a minigame you don't like. Each time you go on a field trip, you'll be able to play one of the two available minigames and if you win, you'll be given a large selection of items from which you'll be able to grab up to 3, and if you win without making a single mistake, you'll be rewarded with a Perfect Bonus of a few hundred You Thought Points!
+      </p>
+      <img width="45%" style="margin-left: 445px;" src="0.7 3.png"></img>
+      <p>
+        Item loadout in screenshot is subject to change
+        <br>
+        <br>
+        Each minigame is a 2D affair as in the previous iteration of field trips, but I'm putting a greater emphasis on keeping minigames fast paced, simple and fun. In particular, each field trip will have at least one minigame which only relies on using one button, which not only forces me to think more creatively about how the minigames should play, but it also ensures there will always be a more user friendly option for people using a controller or touch pad which can make moving the in-game cursor harder than intended. That said, I plan on keeping minigames that use the cursor relatively simple as well. No more mazes or anything else that requires complex movement!
+        <br>
+        <br>
+        I want to mention that
+        <a style="color: #00c538" href="https://youtu.be/tafG03n89MY?si=gji3qm31x4sBh1fQ" target="_blank" referrerpolicy="origin" rel="nofollow noopener">this video by Masahiro Sakurai</a>
+        was really helpful in getting me to reconsider what makes for a fun minigame and to put a focus on one button minigames. To anyone who is interested in game dev, check out his channel if you haven't! He has made a ton of great videos on the topic.
+        <br>
+        <br>
+        As before, each minigame will have two modes. An in-game mode when you are playing Hide & Seek where the minigame will last about a minute, as well as a scoring mode accessible when playing the Field Trips mode. The scoring mode of each minigame allows you to try and set high scores and in many cases only ends once you make too many mistakes!
+        <br>
+        <br>
+        Now that I've given an overview of the new field trip system, let's take a quick look at one of the two minigames that you'll be able to find at the campsite!
+      </p>
+      <h2>
+        <b>Camfire Frenzy</b>
+      </h2>
+      <p>
+        Campfire Frenzy is a fast-paced one-button minigame where you'll have to keep a campfire lit by launching fuel at it. Different objects will be tossed into a launcher from the side of the screen and, if it's fuel such as a log, you'll click to launch it into the fire. If it's not fuel, you'll have to wait until another object is tossed onto the launcher to take its place. If you fail to launch proper fuel into the fire, or launch something that isn't fuel, the fire will die a little, and if it goes out that's game over! It sounds pretty simple, but it gets hectic quick when the speed increases and when multiple objects get tossed at the launcher at once!
+      </p>
+      <img width="45%" style="margin-left: 445px;" src="0.7 4.png"></img>
+      <h2>
+        <b>Conclusion</b>
+      </h2>
+      <p>
+        That's about it for this status update! I'm trying my best to take the lessons learned from the first two iterations of field trips to make something that will be a solid addition to the game. At this point, even if it's not perfect, I'm confident it will be good enough for me to safely say that this will be the final iteration of field trips and that I won't be reworking them again! Which is a relief to be sure, because I hate thinking about time spent working on stuff that ultimately ends up getting scrapped.
+        <br>
+        <br>
+        Currently, the plan is to launch the 0.7 pre-release on September 2, then the public release on September 9! Oh, and speaking of the pre-release, I now have a 
+        <a style="color: #00c538;" href="https://patreon.com/BasicallyGames?utm_medium=unknown&amp;utm_source=join_link&amp;utm_campaign=creatorshare_creator&amp;utm_content=copyLink" target="_blank" referrerpolicy="origin" rel="nofollow noopener">Patreon which you can find by clicking here!</a>
+        Anyone who joins will also be able to access the pre-releases, so if you missed out on the $30+ Kickstarter tier and would like to try out pre-release builds, check it out.
+        <br>
+        <br>
+        That's all for this status update! I hope you all enjoy the new camping field trip when it releases in version 0.7!
+      </p>
+      <h2>
+        Related game
+      </h2>
+      <img src="baldi's basics plus relate card.png" width="40%"></img>
+    </div>
+  </form>
+</body>

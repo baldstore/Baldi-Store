@@ -16,23 +16,134 @@
     document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
   </script>
   <link rel="icon" type="image/x-icon" href="logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/@material/ripple@14.0.0/dist/mdc.ripple.min.js"
+          integrity="sha384-9QANVmWxL3S8VRs8x1Q+bF1Zzogpy7P/Qw1+y5qHLdC1ig0EuoHg9VbB1SXyecdZ"
+          crossorigin="anonymous"></script>
 </head>
 <body>
   <div>
     <md-icon-button id="usage-anchor">
       <md-icon>menu</md-icon>
     </md-icon-button>
-    <md-icon-button>
+    <label class="md-typescale-body-large" style="font-size: 170%; margin-left: 20px;">Baldi's Store</label>
+    <md-outlined-text-field id="search-field" name="q" style="--md-sys-color-primary: #00ca1b; margin-left: 355px; width: 600px;" type="search" placeholder="Search"></md-outlined-text-field>
+    <md-outlined-icon-button id="search-button" width="150%" style="margin-left: 10px;">
       <md-icon>search</md-icon>
+    </md-outlined-icon-button>
+    <md-icon-button id="notifications" width="150%" style="margin-left: 400px;">
+      <md-icon>notifications</md-icon>
     </md-icon-button>
+    <md-menu id="notif" anchor="notifications" style="--md-sys-color-surface-container: #edffef;">
+      <md-menu-item href="games/dev_logs/dev0.7.html">
+        <img slot="start" width="56px"src="notif_plus.png"></md-icon>
+        <div slot="headline">
+          <b>V0.7 Status Update</b>
+          <br>
+          15/8/2024
+          <br>
+          Hey everyone, in this status update I'd like to discuss 
+          <br>
+          the new version of field trips that will be added in 
+          <br>
+          version 0.7 of Baldi's Basics Plus! Camping will be the 
+          <br>
+          first to be re-added, with the farm to follow in a future 
+          <br>
+          update, and then brand new ones on occasion after that. 
+          <br>
+          Before we can head out though, first you'll need to find...
+        </div>
+      </md-menu-item>
+    </md-menu>
+  </div>
+  <script type="module">
+    // This example uses anchor as an ID reference
+    const anchorEl = document.body.querySelector('#notifications');
+    const menuEl = document.body.querySelector('#notif');
+  
+    anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
+  </script>
+  </div>
+  <md-dialog id="dialog-choices" style="--md-sys-color-surface-container-high: #edffef;">
+    <div slot="headline">
+      Search result:
+    </div>
+    <form slot="content" id="form-id" method="dialog">
+      <md-list style="width: fit-content; --md-sys-color-surface: #f8fffa;">
+        <md-list-item>
+          Baldi's Basics Classic
+          <img slot="start" style="width: 56px" src="BALclassic.png"></md-icon>
+          <md-outlined-button slot="end" href="games/classic.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Plus
+          <img slot="start" style="width: 56px" src="BALplus.png"></md-icon>
+          <md-outlined-button slot="end" href="games/plus.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Birthday Bash
+          <img slot="start" style="width: 56px" src="BALparty.png"></md-icon>
+          <md-outlined-button slot="end" href="games/404.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+        </md-list-item>
+        <md-list-item>
+          Baldi's Basics Classic Remastered
+          <img slot="start" style="width: 56px" src="BALremastered.png"></md-icon>
+          <md-outlined-button slot="end" href="games/remastered.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+        </md-list-item>
+        <md-divider></md-divider>
+      </md-list>
+    </form>
+    <div slot="actions">
+      <md-filled-button style="--md-sys-color-primary:#00c403;" id="close-choices">Close</md-button>
+    </div>
+  </md-dialog>
+
+  <md-dialog id="dialog-other" style="--md-sys-color-surface-container-high: #edffef;">
+    <div slot="headline">
+      Search results:
+    </div>
+    <form slot="content" id="form-id" method="dialog">
+      No results.
+    </form>
+    <div slot="actions">
+      <md-filled-button style="--md-sys-color-primary:#00c403;" id="close-other">Close</md-button>
+    </div>
+  </md-dialog>
+  <script>
+    const searchField = document.getElementById('search-field');
+    const searchButton = document.getElementById('search-button');
+    const dialogChoices = document.getElementById('dialog-choices');
+    const dialogOther = document.getElementById('dialog-other');
+    const closeChoices = document.getElementById('close-choices');
+    const closeOther = document.getElementById('close-other');
+
+    const validValues = ["baldi's basics", "Baldi's Basics", "baldi basics", "baldi", "baldi's basics classic", "baldi's basics plus", "baldi's basics remastered"];
+
+    searchButton.addEventListener('click', () => {
+      if (validValues.includes(searchField.value.trim().toLowerCase())) {
+        dialogChoices.show();
+      } else {
+        dialogOther.show();
+      }
+    });
+
+    closeChoices.addEventListener('click', () => {
+      dialogChoices.close();
+    });
+
+    closeOther.addEventListener('click', () => {
+      dialogOther.close();
+    });
+  </script>
     <md-menu id="usage-menu" anchor="usage-anchor">
       <md-menu-item>
-        <div slot="headline">Home</div>
-      </md-menu-item>
-      <md-menu-item>
+        <md-icon slot="start">settings</md-icon>
         <div slot="headline">Settings</div>
       </md-menu-item>
-      <md-menu-item>
+      <md-menu-item href="https://github.com/baldstore/Baldi-Store/">
+        <md-icon slot="start">info</md-icon>
         <div slot="headline">About</div>
       </md-menu-item>
     </md-menu>
@@ -50,44 +161,20 @@
   <form style="margin-left: 50px;">
     <div>
       <p class="md-typescale-body-large" style="margin-right: 10px;">In here you can find games, merches and so much more! Credits original by Micah McGonigal (mystman12)</p>
-      <img src="Kickstarter.svg" onclick="window.open('kickstarter.html')" width="50%"></img>
     </div>
     <div>
       <h1 class="md-typescale-display-medium">Games</h1>
       <p class="md-typescale-body-large">These are common games by Basically Games!. Click a game to see the details!</p>
-      <md-list style="width: 750px;">
-        <md-list-item>
-          Baldi's Basics In Education And Learning
-          <img slot="start" style="width: 56px" src="BALclassic.png">
-          <md-icon-button slot="end">
-            <md-icon>download</md-icon>
-          </md-icon-button>
-        </md-list-item>
-        <md-divider></md-divider>
-        <md-list-item>
-          Baldi's Basics Classic Remastered
-          <img slot="start" style="width: 56px" src="BALremastered.png">
-          <md-icon-button slot="end" href="games/remastered.html">
-            <md-icon>download</md-icon>
-          </md-icon-button>
-        </md-list-item>
-        <md-divider></md-divider>
-        <md-list-item>
-          Baldi's Basics Plus
-          <img slot="start" style="width: 56px" src="BALplus.png">
-          <md-icon-button slot="end">
-            <md-icon>download</md-icon>
-          </md-icon-button>
-        </md-list-item>
-        <md-divider></md-divider>
-        <md-list-item>
-          Baldi's Basics Birthday Bash!
-          <img slot="start" style="width: 56px" src="BALparty.png">
-          <md-icon-button slot="end">
-            <md-icon>download</md-icon>
-          </md-icon-button>
-        </md-list-item>
-      </md-list>
+    </div>
+    <div>
+      <img width="20%" src="games/cards/classic.png">
+      <img width="20%" style="margin-left: 15px;" src="games/cards/remastered.png">
+      <img width="20%" style="margin-left: 15px;" src="games/cards/plus.png">
+    </div>
+    <div width="120%">
+      <md-outlined-button type="button" href="games/classic.html" style="--md-sys-color-primary: #00ca1b;">Download</md-outlined-button>
+      <md-outlined-button type="button" href="games/remastered.html" style="margin-left: 235px; --md-sys-color-primary: #00ca1b;">Download</md-outlined-button>
+      <md-outlined-button type="button" href="games/plus.html " style="margin-left: 235px; --md-sys-color-primary: #00ca1b;">Download</md-outlined-button>
     </div>
     <div>
       <h1 class="md-typescale-display-medium">Merches</h1>

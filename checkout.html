@@ -1,0 +1,35 @@
+<title>Kickstarter</title>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <md-icon-button id="menu" href="index.html">
+      <md-icon>arrow_back</md-icon>
+    </md-icon-button>
+  </div>
+  <div style="margin-left: 50px;">
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAS2WR4WCZdZbavt_Z0tOJGxOSN2-AMD2ytFlnySDZwv0bPSGi1EujBqFDrkcTjwUmwu2DrhSe32R9r6U&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+    <div id="paypal-container-D3XXQ4JS75G9J"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "D3XXQ4JS75G9J",
+      }).render("#paypal-container-D3XXQ4JS75G9J")
+    </script>
+  </div>
+</body>

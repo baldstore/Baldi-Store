@@ -1,3 +1,4 @@
+## Baldi's Store: Where The Funs Begin!
 Baldi's Store: Your One-Stop Shop for Baldi's Basics Fun
 
 Are you a dedicated fan of the popular indie horror game Baldi's Basics? Look no further than Baldi's Store! This unique online store is a haven for all things Baldi, offering a diverse range of merchandise and collectibles to cater to fans of all ages.

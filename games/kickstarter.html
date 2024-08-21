@@ -1,0 +1,109 @@
+<title>Kickstarter</title>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+</head>
+<body>
+  <div>
+    <md-icon-button id="usage-anchor">
+      <md-icon>menu</md-icon>
+    </md-icon-button>
+    <md-icon-button>
+      <md-icon>search</md-icon>
+    </md-icon-button>
+    <md-menu id="usage-menu" anchor="usage-anchor">
+      <md-menu-item>
+        <div slot="headline">Home</div>
+      </md-menu-item>
+      <md-menu-item>
+        <div slot="headline">Settings</div>
+      </md-menu-item>
+      <md-menu-item>
+        <div slot="headline">About</div>
+      </md-menu-item>
+    </md-menu>
+  </div>
+  <script type="module">
+    // This example uses anchor as an ID reference
+    const anchorEl = document.body.querySelector('#usage-anchor');
+    const menuEl = document.body.querySelector('#usage-menu');
+  
+    anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
+  </script>
+  <img style="width: 100%; height: fit-content;" src="header_kickstarter.png"></img>
+  <form style="margin-left: 50px;">
+    <h1 class="md-typescale-display-medium">Kickstarter plan</h1>
+    <div>
+      <p class="md-typescale-body-large" style="margin-right: 10px;"><b>About Kickstarter</b></p>
+      <p class="md-typescale-body-large" style="margin-right: 10px;">Kickstarter subscription include in your account lets you download the latest beta version of the beta game (as known as game is being in Development stage). To get Pre-release versions of the game, you'll need to pay $10 in order to get pre-release! Once you have done paying for that, you'll get pre-release and public version when it is finished and we will notify to you.</p>
+      <p class="md-typescale-body-large" style="margin-right: 10px;">Accepted payment method: VISA, Mastercard, cards, PayPal</p>
+    </div>
+    <iframe src="checkout.html" noborder="0" width="750px" height="500px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen scrolling="yes" seamless></iframe>
+    <div>
+      <h1 class="md-typescale-display-medium">Hey student,</h1>
+      <p class="md-typescale-body-large">How about these free games? You can play these game and wait until the Kickstarter game is finished in development stages!</p>
+      <md-list style="width: 750px;">
+        <md-list-item>
+          Baldi's Basics In Education And Learning
+          <img slot="start" style="width: 56px" src="BALclassic.png">
+          <md-icon-button slot="end">
+            <md-icon>download</md-icon>
+          </md-icon-button>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Classic Remastered
+          <img slot="start" style="width: 56px" src="BALremastered.png">
+          <md-icon-button slot="end">
+            <md-icon>download</md-icon>
+          </md-icon-button>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Plus
+          <img slot="start" style="width: 56px" src="BALplus.png">
+          <md-icon-button slot="end">
+            <md-icon>download</md-icon>
+          </md-icon-button>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Birthday Bash!
+          <img slot="start" style="width: 56px" src="BALparty.png">
+          <md-icon-button slot="end">
+            <md-icon>download</md-icon>
+          </md-icon-button>
+        </md-list-item>
+      </md-list>
+    </div>
+  </form>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  </style>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+<div style="margin-left: 50px;">
+  <label class="md-typescale-body-large">© 2024 MysteryGamer</label>
+  <md-text-button style="margin-left: 1000px; --md-sys-color-primary: #000000;">Legal</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Services</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Uses</md-text-button>
+</div>
+</body>

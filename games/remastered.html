@@ -1,0 +1,186 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <link rel="stylesheet" src="style.css">
+  <title>Baldi's Basics Classic Remastered</title>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body>
+  <div>
+    <md-icon-button id="usage-anchor">
+      <md-icon>menu</md-icon>
+    </md-icon-button>
+    <md-icon-button>
+      <md-icon>search</md-icon>
+    </md-icon-button>
+    <md-menu id="usage-menu" anchor="usage-anchor">
+      <md-menu-item>
+        <div slot="headline">Home</div>
+      </md-menu-item>
+      <md-menu-item>
+        <div slot="headline">Settings</div>
+      </md-menu-item>
+      <md-menu-item>
+        <div slot="headline">About</div>
+      </md-menu-item>
+    </md-menu>
+  </div>
+  <script type="module">
+    // This example uses anchor as an ID reference
+    const anchorEl = document.body.querySelector('#usage-anchor');
+    const menuEl = document.body.querySelector('#usage-menu');
+  
+    anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
+  </script>
+  </div>
+  <img src="inforemastered.svg" width="40%" style="margin-top: 25px; margin-left: 50px;"></img>
+  <br>
+  <md-filled-button id="openDialogButton" style="width: 1600px; margin-left: 50px; --md-sys-color-primary:#00c403;">Install</md-filled-button>
+  <form style="margin-left: 50px;">
+    <div>
+      <h1 class="md-typescale-body-large" style="margin-right: 10px;">About the game</h1>
+      <md-icon-button href="aboutclassic.html" type="button" style="margin-left: 1550px;">
+        <md-icon>arrow_forward</md-icon>
+      </md-icon-button>
+    </div>
+    <p class="md-typescale-body-large">Welcome to Baldi's Basics in Education and Learning!</p>
+    <p class="md-typescale-body-large">Baldi's Basics Classic Remastered is a survival horror stealth game that parodies cheap 90's edutainment and never takes itself too seriously. Explore Baldi's schoolhouse and try to find all 7 notebooks, but don't get caught by Baldi! He wants to play hide-and-seek, but something... Isn't right. Luckily you have a slew of items you can find and use to your advantage, but Baldi also has friends who can cause problems for you if you're not careful. And remember, Baldi hears every noise you make, so do what you can to stay quiet!</p>
+    <h2 class="md-typescale-body-large">Game information and requirements</h2>
+    <md-list style="width: 1550px; --md-sys-color-surface: #f8fffa;">
+      <md-list-item>
+        Version: 1.1
+        <md-icon slot="start" style="width: 56px">info</md-icon>
+      </md-list-item>
+      <md-list-item>
+        64-Bit hardware only; Installed Windows 7 (SP1+) or newer
+        <md-icon slot="start" style="width: 56px">computer</md-icon>
+      </md-list-item>
+      <md-list-item>
+        350 MB available  storage
+        <md-icon slot="start" style="width: 56px;">storage</md-icon>
+      </md-list-item>
+      <md-list-item>
+        DirectX 10+
+        <md-icon slot="start" style="width: 56px">developer_board</md-icon>
+      </md-list-item>
+      <md-list-item>
+        4GB RAM, 1.5 GHz processor or greater
+        <md-icon slot="start" style="width: 56px">memory</md-icon>
+      </md-list-item>
+    </md-list>
+    <p class="md-typescale-body-large" style="font-size: 110%;"><b>You can also check for other games</b></p>
+    <div>
+      <img width="20%" src="cards/classic.png"></img>
+      <img width="20%" style="margin-left: 10px;" src="cards/plus.png"></img>
+      <img width="20%" style="margin-left: 10px;" src="cards/plus-pre.png"></img>
+    </div>
+    <p class="md-typescale-body-large" style="font-size: 110%;"><b>Screenshot</b></p>
+    <iframe src="screenshots/remastered.html" width="1500px" height="300px"></iframe>
+    <p class="md-typescale-body-large" style="font-size: 110%;"><b>Contact</b></p>
+    <md-list style="width: 1550px; --md-sys-color-surface: #f8fffa;">
+      <md-list-item>
+        Email: contact@basicallygames.com
+        <md-icon slot="start" style="width: 56px">contact_mail</md-icon>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        Administrator: Micah McGonigal (mystman12)
+        <md-icon slot="start" style="width: 56px">person</md-icon>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        <label style="margin-left: 14px;">X (Twitter)</label>
+        <img slot="start" style="width: 30px; margin-left: 13px;" src="X_icon.svg">
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item>
+        basicallygames.com
+        <md-icon slot="start" style="width: 56px">public</md-icon>
+      </md-list-item>
+    </md-list>
+    <p class="md-typescale-body-large" style="font-size: 110%;"><b>Rating and comments</b></p>
+    <p class="md-typescale-body-large">Rating is currently unavailable...</p>
+<!-- Material 3 Dialog with Multiple Choices -->
+<md-dialog id="exampleDialog" style="background-color: #c7ffd5">
+  <div slot="headline">Choose your OS</div>
+    <div slot="content">
+      <md-radio-group>
+        <md-radio style="--md-sys-color-primary:#00c403;" id="option1" name="options">Option 1</md-radio>
+        <label for="option1">Download for Windows</label>
+        <br><br>
+        <md-radio style="--md-sys-color-primary:#00c403;" id="option2" name="options" value="Option 2">Option 2</md-radio>
+        <label for="option2">Linux (coming soon!)</label>
+        <br><br>
+        <md-radio style="--md-sys-color-primary:#00c403;" id="option3" name="options" value="Option 3">Option 3</md-radio>
+        <label for="option3">MacOS (coming soon!)</label>
+        <br><br>
+        <md-radio style="--md-sys-color-primary:#00c403;" id="option4" name="options" value="Option 4" disabled>Option 3</md-radio>
+        <label for="option4">Android (planned)</label>
+      </md-radio-group>
+    </div>
+    <div slot="actions">
+      <md-text-button id="cancelButton" style="--md-sys-color-primary:#00c403;">Cancel</md-text-button>
+      <md-filled-button id="confirmButton" style="--md-sys-color-primary:#00c403;" onclick="window.open('https://drive.usercontent.google.com/download?id=1ZHhX_Jj92BD8U41hIY7pJ1IKJWj8pZDN&export=download&authuser=0')">Confirm</md-filled-tonal-button>
+    </div>
+  </md-dialog>
+  <style>
+    :root {
+      --md-sys-color-surface-container-high: #edffef;
+    }
+  </style>
+<script>
+  // Get references to the buttons and dialog
+  const openDialogButton = document.getElementById('openDialogButton');
+  const exampleDialog = document.getElementById('exampleDialog');
+  const cancelButton = document.getElementById('cancelButton');
+  const confirmButton = document.getElementById('confirmButton');
+
+  // Add event listener to the button to open the dialog
+  openDialogButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default action (e.g., form submission)
+    exampleDialog.show();
+  });
+
+  // Add event listeners to the Cancel and Confirm buttons to prevent page reload
+  cancelButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default action
+    exampleDialog.close();
+  });
+
+  confirmButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default action
+    exampleDialog.close();
+    // Add any additional logic for the confirm action here
+  });
+</script>
+<br><br><br><br><br><br><br><br><br>
+<div>
+  <label class="md-typescale-body-large">© 2024 MysteryGamer</label>
+  <md-text-button style="margin-left: 1000px; --md-sys-color-primary: #000000;">Legal</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Services</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Uses</md-text-button>
+</div>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  </style>
+  </div>
+</body>

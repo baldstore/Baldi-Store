@@ -1,0 +1,81 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+</head>
+<body>
+  <div>
+    <md-icon-button id="menu">
+      <md-icon>menu</md-icon>
+    </md-icon-button>
+    <md-icon-button>
+      <md-icon>search</md-icon>
+    </md-icon-button>
+  </div>
+
+  <h1 style="margin-left: 50px; margin-top: 50px;" class="md-typescale-display-medium">Welcome to Baldi's Store</h1>
+  <form style="margin-left: 50px;">
+    <div>
+      <p class="md-typescale-body-large" style="margin-right: 10px;">In here you can find games, merches and so much more! Credits original by Micah McGonigal (mystman12)</p>
+      <img src="Kickstarter.svg" onclick="window.open('kickstarter.html')" width="50%"></img>
+    </div>
+    <div>
+      <h1 class="md-typescale-display-medium">Games</h1>
+      <p class="md-typescale-body-large">These are common games by Basically Games!. Click a game to see the details!</p>
+      <md-list style="width: 750px;">
+        <md-list-item>
+          Baldi's Basics In Education And Learning
+          <img slot="start" style="width: 56px" src="BALclassic.png">
+          <md-icon-button style="margin-left: 305px;">
+            <md-icon>download</md-icon>
+          </md-icon-button>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Classic Remastered
+          <img slot="start" style="width: 56px" src="BALremastered.png">
+          <md-icon-button style="margin-left: 350px;">
+            <md-icon>download</md-icon>
+          </md-icon-button>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Plus
+          <img slot="start" style="width: 56px" src="BALplus.png">
+          <md-icon-button style="margin-left: 460px;">
+            <md-icon>download</md-icon>
+          </md-icon-button>
+        </md-list-item>
+        <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Birthday Bash!
+          <img slot="start" style="width: 56px" src="BALparty.png">
+          <md-icon-button style="margin-left: 388px;">
+            <md-icon>download</md-icon>
+          </md-icon-button>
+        </md-list-item>
+      </md-list>
+    </div>
+  </form>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  </style>
+  </div>
+</body>

@@ -10,9 +10,9 @@ Whether you're looking to add to your existing Baldi collection or simply want t
 Hey, but also don't miss out the Kickstarter membership so you can play Pre-releases! Check out it now :)
 
 ## About Store
-version: 1.0.1
-Material Design: Version 3
-Games: up-to-date (all)
+- Version: 1.0.1
+- Material Design: Version 3
+- Games: up-to-date (all)
 
 # Changelog
 ## Version 1.0

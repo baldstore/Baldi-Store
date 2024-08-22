@@ -15,6 +15,7 @@
 
     document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
   </script>
+  <link rel="icon" type="image/x-icon" href="kickstarter_logo.png">
 </head>
 <body>
   <div>
@@ -55,11 +56,11 @@
     <div>
       <h1 class="md-typescale-display-medium">Hey student,</h1>
       <p class="md-typescale-body-large">How about these free games? You can play these game and wait until the Kickstarter game is finished in development stages!</p>
-      <md-list style="width: 750px;">
+      <md-list style="width: 750px; --md-sys-color-surface: #f8fffa;">
         <md-list-item>
           Baldi's Basics In Education And Learning
           <img slot="start" style="width: 56px" src="BALclassic.png">
-          <md-icon-button style="margin-left: 305px;">
+          <md-icon-button type="button" href="https://baldstore.github.io/Baldi-Store/games/classic.html" style="margin-left: 305px;">
             <md-icon>download</md-icon>
           </md-icon-button>
         </md-list-item>
@@ -67,7 +68,7 @@
         <md-list-item>
           Baldi's Basics Classic Remastered
           <img slot="start" style="width: 56px" src="BALremastered.png">
-          <md-icon-button style="margin-left: 350px;">
+          <md-icon-button type="button" href="https://baldstore.github.io/Baldi-Store/games/remastered.html" style="margin-left: 350px;">
             <md-icon>download</md-icon>
           </md-icon-button>
         </md-list-item>
@@ -75,15 +76,7 @@
         <md-list-item>
           Baldi's Basics Plus
           <img slot="start" style="width: 56px" src="BALplus.png">
-          <md-icon-button style="margin-left: 460px;">
-            <md-icon>download</md-icon>
-          </md-icon-button>
-        </md-list-item>
-        <md-divider></md-divider>
-        <md-list-item>
-          Baldi's Basics Birthday Bash!
-          <img slot="start" style="width: 56px" src="BALparty.png">
-          <md-icon-button style="margin-left: 388px;">
+          <md-icon-button type="button" href="https://baldstore.github.io/Baldi-Store/games/plus.html" style="margin-left: 460px;">
             <md-icon>download</md-icon>
           </md-icon-button>
         </md-list-item>
@@ -102,8 +95,8 @@
   <br><br><br><br><br><br><br><br><br>
 <div style="margin-left: 50px;">
   <label class="md-typescale-body-large">© 2024 MysteryGamer</label>
-  <md-text-button style="margin-left: 1000px; --md-sys-color-primary: #000000;">Legal</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Services</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Uses</md-text-button>
+  <md-text-button  style="margin-left: 1000px; --md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Legal</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Services</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Uses</md-text-button>
 </div>
 </body>

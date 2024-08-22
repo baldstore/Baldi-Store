@@ -34,8 +34,8 @@
       <md-icon>notifications</md-icon>
     </md-icon-button>
     <md-menu id="notif" anchor="notifications" style="--md-sys-color-surface-container: #edffef;">
-      <md-menu-item href="games/dev_logs/dev0.7.html">
-        <img slot="start" width="56px"src="notif_plus.png"></md-icon>
+      <md-menu-item href="https://baldstore.github.io/Baldi-Store/games/dev_logs/dev0.7.html">
+        <img slot="start" width="36px" src="notif_plus.png"></md-icon>
         <div slot="headline">
           <b>V0.7 Status Update</b>
           <br>
@@ -52,6 +52,21 @@
           update, and then brand new ones on occasion after that. 
           <br>
           Before we can head out though, first you'll need to find...
+        </div>
+      </md-menu-item>
+      <md-divider></md-divider>
+      <md-menu-item>
+        <md-icon slot="start" width="56px">new_releases</md-icon>
+        <div slot="headline">
+          <b>Welcome to Baldi's Store!</b>
+          <br>
+          Welcome to Baldi's Store, where you can find games and 
+          <br>
+          merches and so much more! You can download a game by
+          <br>
+          clicking the Download button! And there's more to see
+          <br>
+          here...
         </div>
       </md-menu-item>
     </md-menu>
@@ -73,26 +88,32 @@
         <md-list-item>
           Baldi's Basics Classic
           <img slot="start" style="width: 56px" src="BALclassic.png"></md-icon>
-          <md-outlined-button slot="end" href="games/classic.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/classic.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
         </md-list-item>
         <md-divider></md-divider>
         <md-list-item>
           Baldi's Basics Plus
           <img slot="start" style="width: 56px" src="BALplus.png"></md-icon>
-          <md-outlined-button slot="end" href="games/plus.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/plus.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
         </md-list-item>
         <md-divider></md-divider>
         <md-list-item>
           Baldi's Basics Birthday Bash
           <img slot="start" style="width: 56px" src="BALparty.png"></md-icon>
-          <md-outlined-button slot="end" href="games/404.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/404.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
         </md-list-item>
+        <md-divider></md-divider>
         <md-list-item>
           Baldi's Basics Classic Remastered
           <img slot="start" style="width: 56px" src="BALremastered.png"></md-icon>
-          <md-outlined-button slot="end" href="games/remastered.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/remastered.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
         </md-list-item>
         <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Plus Pre-release
+          <img slot="start" style="width: 56px" src="BALplus.png"></md-icon>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/plus_k.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+        </md-list-item>
       </md-list>
     </form>
     <div slot="actions">
@@ -167,9 +188,9 @@
       <p class="md-typescale-body-large">These are common games by Basically Games!. Click a game to see the details!</p>
     </div>
     <div>
-      <img width="20%" src="games/cards/classic.png">
-      <img width="20%" style="margin-left: 15px;" src="games/cards/remastered.png">
-      <img width="20%" style="margin-left: 15px;" src="games/cards/plus.png">
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/classic.html')" src="games/cards/classic.png">
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/remastered.html')" style="margin-left: 15px;" src="games/cards/remastered.png">
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus.html')" style="margin-left: 15px;" src="games/cards/plus.png">
     </div>
     <div width="120%">
       <md-outlined-button type="button" href="games/classic.html" style="--md-sys-color-primary: #00ca1b;">Download</md-outlined-button>
@@ -200,10 +221,10 @@
   </style>
   </div>
   <br><br><br><br><br><br><br><br><br>
-<div style="margin-left: 50px;">
-  <label class="md-typescale-body-large">© 2024 MysteryGamer</label>
-  <md-text-button style="margin-left: 1000px; --md-sys-color-primary: #000000;">Legal</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Services</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Uses</md-text-button>
-</div>
+  <div style="margin-left: 50px;">
+    <label class="md-typescale-body-large">© 2024 MysteryGamer</label>
+    <md-text-button  style="margin-left: 1000px; --md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Legal</md-text-button>
+    <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Services</md-text-button>
+    <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Uses</md-text-button>
+  </div>
 </body>

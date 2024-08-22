@@ -35,7 +35,7 @@
     </md-icon-button>
     <md-menu id="notif" anchor="notifications" style="--md-sys-color-surface-container: #edffef;">
       <md-menu-item href="games/dev_logs/dev0.7.html">
-        <img slot="start" width="56px"src="notif_plus.png"></md-icon>
+        <img slot="start" width="56px" src="https://baldstore.github.io/Baldi-Store/notif_plus.png"></md-icon>
         <div slot="headline">
           <b>V0.7 Status Update</b>
           <br>
@@ -52,6 +52,21 @@
           update, and then brand new ones on occasion after that. 
           <br>
           Before we can head out though, first you'll need to find...
+        </div>
+      </md-menu-item>
+      <md-divider></md-divider>
+      <md-menu-item>
+        <md-icon slot="start" width="56px">new_releases</md-icon>
+        <div slot="headline">
+          <b>Welcome to Baldi's Store!</b>
+          <br>
+          Welcome to Baldi's Store, where you can find games and 
+          <br>
+          merches and so much more! You can download a game by
+          <br>
+          clicking the Download button! And there's more to see
+          <br>
+          here...
         </div>
       </md-menu-item>
     </md-menu>
@@ -137,34 +152,19 @@
       dialogOther.close();
     });
   </script>
-    <md-menu id="usage-menu" anchor="usage-anchor">
+  </div>
+    <md-menu id="usage-menu" anchor="usage-anchor" style="--md-sys-color-surface-container: #edffef;">
       <md-menu-item>
+        <div slot="headline" type="button" href="https://baldstore.github.io/Baldi-Store/">Home</div>
+        <md-icon slot="start">home</md-icon>
+      </md-menu-item>
+      <md-menu-item>
+        <div slot="headline">Settings</div>
         <md-icon slot="start">settings</md-icon>
-        <div slot="headline">Settings</div>
       </md-menu-item>
-      <md-menu-item href="https://github.com/baldstore/Baldi-Store/">
+      <md-menu-item>
+        <div slot="headline" href="https://github.com/baldstore/Baldi-Store/">About</div>
         <md-icon slot="start">info</md-icon>
-        <div slot="headline">About</div>
-      </md-menu-item>
-    </md-menu>
-  </div>
-  <script type="module">
-    // This example uses anchor as an ID reference
-    const anchorEl = document.body.querySelector('#usage-anchor');
-    const menuEl = document.body.querySelector('#usage-menu');
-  
-    anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
-  </script>
-  </div>
-    <md-menu id="usage-menu" anchor="usage-anchor">
-      <md-menu-item>
-        <div slot="headline">Home</div>
-      </md-menu-item>
-      <md-menu-item>
-        <div slot="headline">Settings</div>
-      </md-menu-item>
-      <md-menu-item>
-        <div slot="headline">About</div>
       </md-menu-item>
     </md-menu>
   </div>
@@ -181,13 +181,21 @@
   <md-filled-button id="openDialogButton" style="width: 1600px; margin-left: 50px; --md-sys-color-primary:#00c403;">Install</md-filled-button>
   <form style="margin-left: 50px;">
     <div>
-      <h1 class="md-typescale-body-large" style="margin-right: 10px;">About the game</h1>
-      <md-icon-button href="aboutclassic.html" type="button" style="margin-left: 1550px;">
-        <md-icon>arrow_forward</md-icon>
-      </md-icon-button>
+      <md-list style="width: 1590px; --md-sys-color-surface: #ffffff;">
+        <md-list-item>
+          About the game
+          <md-icon-button type="button" slot="end" style="width: 56px" href="https://baldstore.github.io/Baldi-Store/games/aboutclassic.html">
+            <md-icon>arrow_forward</md-icon>
+          </md-icon-button>
+        </md-list-item>
+      </md-list>
     </div>
-    <p class="md-typescale-body-large">The game is not what it seems...</p>
-    <p class="md-typescale-body-large">Inspired by creepy/bad edutainment games from the 90s, (Sonic's Schoolhouse, I.M. Meen, 3D Dinosaur Adventure: Save the Dinosaurs), Baldi's Basics is a meta horror game that's really weird, with no real educational value to be found. Collect all 7 of the notebooks and escape the school, all while avoiding Baldi. Baldi has many friends in the school that will slow down your progress and put you at risk of being caught, so learn how each character works and how you can avoid their attention. Find and use items to your advantage. Oh, and finally, try not to get the quiz answers wrong... Each wrong answer makes Baldi angrier...</p>
+    <p class="md-typescale-body-large">
+      The game is not what it seems...
+      <br>
+      <br>
+      Inspired by creepy/bad edutainment games from the 90s, (Sonic's Schoolhouse, I.M. Meen, 3D Dinosaur Adventure: Save the Dinosaurs), Baldi's Basics is a meta horror game that's really weird, with no real educational value to be found. Collect all 7 of the notebooks and escape the school, all while avoiding Baldi. Baldi has many friends in the school that will slow down your progress and put you at risk of being caught, so learn how each character works and how you can avoid their attention. Find and use items to your advantage. Oh, and finally, try not to get the quiz answers wrong... Each wrong answer makes Baldi angrier...
+    </p>
     <h2 class="md-typescale-body-large">Game information and requirements</h2>
     <md-list style="width: 1550px; --md-sys-color-surface: #f8fffa;">
       <md-list-item>
@@ -197,6 +205,10 @@
       <md-list-item>
         64-Bit hardware only; Installed Windows 7 (SP1+) or newer
         <md-icon slot="start" style="width: 56px">computer</md-icon>
+      </md-list-item>
+      <md-list-item>
+        Android 4.1 or later
+        <md-icon slot="start" style="width: 56px">android</md-icon>
       </md-list-item>
       <md-list-item>
         350 MB available  storage
@@ -213,9 +225,9 @@
     </md-list>
     <p class="md-typescale-body-large" style="font-size: 110%;"><b>You can also check for other games</b></p>
     <div>
-      <img width="20%" src="cards/remastered.png" href="remastered.html"></img>
-      <img width="20%" style="margin-left: 10px;" src="cards/plus.png" href="plus"></img>
-      <img width="20%" style="margin-left: 10px;" src="cards/plus-pre.png"></img>
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/remastered.html')" src="cards/remastered.png"></img>
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus.html')" style="margin-left: 10px;" src="cards/plus.png"></img>
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus_k.html')" style="margin-left: 10px;" src="cards/plus-pre.png"></img>
     </div>
     <p class="md-typescale-body-large" style="font-size: 110%;"><b>Screenshot</b></p>
     <iframe src="screenshots/screenshot.html" width="1500px" height="300px"></iframe>
@@ -297,11 +309,11 @@
   });
 </script>
 <br><br><br><br><br><br><br><br><br>
-<div>
+<div style="margin-left: 50px;">
   <label class="md-typescale-body-large">© 2024 MysteryGamer</label>
-  <md-text-button style="margin-left: 1000px; --md-sys-color-primary: #000000;">Legal</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Services</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Uses</md-text-button>
+  <md-text-button  style="margin-left: 1000px; --md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Legal</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Services</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Uses</md-text-button>
 </div>
   <style>
     form {

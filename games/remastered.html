@@ -16,9 +16,9 @@
   </script>
   <link rel="stylesheet" src="style.css">
   <title>Baldi's Basics Classic Remastered</title>
+  <link rel="icon" type="image/x-icon" href="remastered_logo.png">
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="icon" type="image/x-icon" href="remastered_logo.png">
 </head>
 <body>
   <div>
@@ -35,7 +35,7 @@
     </md-icon-button>
     <md-menu id="notif" anchor="notifications" style="--md-sys-color-surface-container: #edffef;">
       <md-menu-item href="games/dev_logs/dev0.7.html">
-        <img slot="start" width="56px"src="notif_plus.png"></md-icon>
+        <img slot="start" width="56px" src="https://baldstore.github.io/Baldi-Store/notif_plus.png"></md-icon>
         <div slot="headline">
           <b>V0.7 Status Update</b>
           <br>
@@ -52,6 +52,21 @@
           update, and then brand new ones on occasion after that. 
           <br>
           Before we can head out though, first you'll need to find...
+        </div>
+      </md-menu-item>
+      <md-divider></md-divider>
+      <md-menu-item>
+        <md-icon slot="start" width="56px">new_releases</md-icon>
+        <div slot="headline">
+          <b>Welcome to Baldi's Store!</b>
+          <br>
+          Welcome to Baldi's Store, where you can find games and 
+          <br>
+          merches and so much more! You can download a game by
+          <br>
+          clicking the Download button! And there's more to see
+          <br>
+          here...
         </div>
       </md-menu-item>
     </md-menu>
@@ -137,34 +152,19 @@
       dialogOther.close();
     });
   </script>
-    <md-menu id="usage-menu" anchor="usage-anchor">
+  </div>
+    <md-menu id="usage-menu" anchor="usage-anchor" style="--md-sys-color-surface-container: #edffef;">
       <md-menu-item>
+        <div slot="headline" type="button" href="https://baldstore.github.io/Baldi-Store/">Home</div>
+        <md-icon slot="start">home</md-icon>
+      </md-menu-item>
+      <md-menu-item>
+        <div slot="headline">Settings</div>
         <md-icon slot="start">settings</md-icon>
-        <div slot="headline">Settings</div>
       </md-menu-item>
-      <md-menu-item href="https://github.com/baldstore/Baldi-Store/">
+      <md-menu-item>
+        <div slot="headline" href="https://github.com/baldstore/Baldi-Store/">About</div>
         <md-icon slot="start">info</md-icon>
-        <div slot="headline">About</div>
-      </md-menu-item>
-    </md-menu>
-  </div>
-  <script type="module">
-    // This example uses anchor as an ID reference
-    const anchorEl = document.body.querySelector('#usage-anchor');
-    const menuEl = document.body.querySelector('#usage-menu');
-  
-    anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
-  </script>
-  </div>
-    <md-menu id="usage-menu" anchor="usage-anchor">
-      <md-menu-item>
-        <div slot="headline">Home</div>
-      </md-menu-item>
-      <md-menu-item>
-        <div slot="headline">Settings</div>
-      </md-menu-item>
-      <md-menu-item>
-        <div slot="headline">About</div>
       </md-menu-item>
     </md-menu>
   </div>
@@ -181,13 +181,21 @@
   <md-filled-button id="openDialogButton" style="width: 1600px; margin-left: 50px; --md-sys-color-primary:#00c403;">Install</md-filled-button>
   <form style="margin-left: 50px;">
     <div>
-      <h1 class="md-typescale-body-large" style="margin-right: 10px;">About the game</h1>
-      <md-icon-button href="aboutclassic.html" type="button" style="margin-left: 1550px;">
-        <md-icon>arrow_forward</md-icon>
-      </md-icon-button>
+      <md-list style="width: 1590px; --md-sys-color-surface: #ffffff;">
+        <md-list-item>
+          About the game
+          <md-icon-button type="button" slot="end" style="width: 56px" href="https://baldstore.github.io/Baldi-Store/games/aboutclassic.html">
+            <md-icon>arrow_forward</md-icon>
+          </md-icon-button>
+        </md-list-item>
+      </md-list>
     </div>
-    <p class="md-typescale-body-large">Welcome to Baldi's Basics in Education and Learning!</p>
-    <p class="md-typescale-body-large">Baldi's Basics Classic Remastered is a survival horror stealth game that parodies cheap 90's edutainment and never takes itself too seriously. Explore Baldi's schoolhouse and try to find all 7 notebooks, but don't get caught by Baldi! He wants to play hide-and-seek, but something... Isn't right. Luckily you have a slew of items you can find and use to your advantage, but Baldi also has friends who can cause problems for you if you're not careful. And remember, Baldi hears every noise you make, so do what you can to stay quiet!</p>
+    <p class="md-typescale-body-large">
+      <b>Welcome to Baldi's Basics in Education and Learning!</b>
+      <br>
+      <br>
+      Baldi's Basics Classic Remastered is a survival horror stealth game that parodies cheap 90's edutainment and never takes itself too seriously. Explore Baldi's schoolhouse and try to find all 7 notebooks, but don't get caught by Baldi! He wants to play hide-and-seek, but something... Isn't right. Luckily you have a slew of items you can find and use to your advantage, but Baldi also has friends who can cause problems for you if you're not careful. And remember, Baldi hears every noise you make, so do what you can to stay quiet!
+    </p>
     <h2 class="md-typescale-body-large">Game information and requirements</h2>
     <md-list style="width: 1550px; --md-sys-color-surface: #f8fffa;">
       <md-list-item>
@@ -213,9 +221,9 @@
     </md-list>
     <p class="md-typescale-body-large" style="font-size: 110%;"><b>You can also check for other games</b></p>
     <div>
-      <img width="20%" href="classic.html" src="cards/classic.png"></img>
-      <img width="20%" href="plus.html" style="margin-left: 10px;" src="cards/plus.png"></img>
-      <img width="20%" href="plus_k.html" style="margin-left: 10px;" src="cards/plus-pre.png"></img>
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/classic.html')" src="cards/classic.png"></img>
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus.html')" style="margin-left: 10px;" src="cards/plus.png"></img>
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus_k.html')" style="margin-left: 10px;" src="cards/plus-pre.png"></img>
     </div>
     <p class="md-typescale-body-large" style="font-size: 110%;"><b>Screenshot</b></p>
     <iframe src="screenshots/remastered.html" width="1500px" height="300px"></iframe>
@@ -257,13 +265,13 @@
         <md-radio style="--md-sys-color-primary:#00c403;" id="option3" name="options" value="Option 3">Option 3</md-radio>
         <label for="option3">MacOS (coming soon!)</label>
         <br><br>
-        <md-radio style="--md-sys-color-primary:#00c403;" id="option4" name="options" value="Option 4" disabled>Option 3</md-radio>
-        <label for="option4">Android (planned)</label>
+        <md-radio style="--md-sys-color-primary:#00c403;" id="option4" name="options" value="Option 4" onclick="window.open('https://drive.usercontent.google.com/download?id=1BrsswpnQHPF7IHSk8tgZjGYDqT9S4nCP&export=download&authuser=0')">Option 3</md-radio>
+        <label for="option4">Android (click to download)</label>
       </md-radio-group>
     </div>
     <div slot="actions">
       <md-text-button id="cancelButton" style="--md-sys-color-primary:#00c403;">Cancel</md-text-button>
-      <md-filled-button id="confirmButton" style="--md-sys-color-primary:#00c403;" onclick="window.open('https://drive.usercontent.google.com/download?id=1ZHhX_Jj92BD8U41hIY7pJ1IKJWj8pZDN&export=download&authuser=0')">Confirm</md-filled-tonal-button>
+      <md-filled-button id="confirmButton" style="--md-sys-color-primary:#00c403;" onclick="window.open('https://drive.usercontent.google.com/download?id=1xozVLHqgb_U1DpJmeOAl6I38wOsBOYfn&export=download&authuser=0')">Confirm</md-filled-tonal-button>
     </div>
   </md-dialog>
   <style>
@@ -297,11 +305,11 @@
   });
 </script>
 <br><br><br><br><br><br><br><br><br>
-<div>
+<div style="margin-left: 50px;">
   <label class="md-typescale-body-large">© 2024 MysteryGamer</label>
-  <md-text-button style="margin-left: 1000px; --md-sys-color-primary: #000000;">Legal</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Services</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;">Terms of Uses</md-text-button>
+  <md-text-button  style="margin-left: 1000px; --md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Legal</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Services</md-text-button>
+  <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Uses</md-text-button>
 </div>
   <style>
     form {

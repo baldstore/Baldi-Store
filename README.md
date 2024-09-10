@@ -25,6 +25,5 @@ Hey, but also don't miss out the Kickstarter membership so you can play Pre-rele
 - Improved performance to load the website fast
 ## Version 1.1
 - Updated new website layout, now with tabs for easy navigating
-- New download mirror links (github)
 - Search now working
 - Improved performance and bugs fixed

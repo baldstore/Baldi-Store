@@ -1,5 +1,7 @@
+<!DOCTYPE html>
+<html style="cursor: url('CursorSprite.png') no-repeat;">
 <head>
-  <title>Baldi's Store</title>
+  <title>All games</title>
   <style>
     body {transition: opacity ease-in 0.2s; }
     body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; }
@@ -38,31 +40,7 @@
   </script>
   <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <!-- Fonts to support Material Design -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-  />
-  <!-- Icons to support Material Design -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@latest",
-        "react-dom": "https://esm.sh/react-dom@latest",
-        "react/jsx-runtime": "https://esm.sh/react@latest/jsx-runtime",
-        "@mui/material": "https://esm.sh/@mui/material@latest?external=react"
-      }
-    }
-  </script>
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <md-list style="--md-sys-color-surface: #f4fff3;">
@@ -92,6 +70,13 @@
         About
       </md-primary-tab>
     </md-tabs>
+    <script>
+      tabs.addEventListener('change', (event: Event) => {
+        if (event.target.activeTabIndex === 2) {
+          // ... perform logic only if index of selected item is 2.
+        }
+      });
+    </script>
     <style>
       #fixed-tabs {
           position: fixed;
@@ -160,10 +145,7 @@
   </div>
   <style>
     #notif {
-      --md-sys-color-surface-container: rgba(203, 255, 206, 0.671);
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-      backdrop-filter: blur( 12px );
-      -webkit-backdrop-filter: blur( 12px );
+      --md-sys-color-surface-container: rgb(231, 255, 232);
     }
   </style>
   <script type="module">
@@ -272,125 +254,20 @@
     anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
   </script>
   </div>
-
-  <h1 style="margin-left: 50px; margin-top: 50px;" class="md-typescale-display-medium">Welcome to Baldi's Store</h1>
   <form style="margin-left: 50px;">
     <div>
-      <p class="md-typescale-body-large" style="margin-right: 10px;">In here you can find games, merches and so much more! Credits original by Micah McGonigal (mystman12)</p>
+      <h1 class="md-typescale-display-medium">All games</h1>
+      <p class="md-typescale-body-large">You can find Baldi games in this page.</p>
     </div>
     <div>
-      <h1 class="md-typescale-display-medium">Games</h1>
-      <p class="md-typescale-body-large">These are common games by Basically Games!. Click a game to see the details!</p>
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/classic.html')" src="games/cards/classic.png">
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/remastered.html')" style="margin-left: 15px;" src="games/cards/remastered.png">
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus.html')" style="margin-left: 15px;" src="games/cards/plus.png">
+      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus.html')" style="margin-left: 15px;" src="games/cards/birthdaybash.png">
     </div>
-    <div class="card" onclick="window.location.href = ('games/plus.html')">
-      <img src="svg_bg/plus.png" alt="Plus" style="width: 100%">
-      <div class="container">
-        <h4>
-          <b>Baldi's Basics Plus - V0.7 is available!</b>
-        </h4>
-        <p class="md-typescale-body-large">Check out the new update! Field trip returns in version 0.7!</p>
-      </div>
-      <md-ripple></md-ripple>
-    </div>
-    <div class="bbcards">
-      <div class="card1" onclick="window.location.href = ('games/classic.html')">
-        <img src="svg_bg/classic.png" alt="Plus" style="width: 100%">
-        <div class="container">
-          <h4>
-            <b>Baldi's Basics Classic</b>
-          </h4>
-          <p class="md-typescale-body-large">Downloadable for Windows and Android</p>
-        </div>
-        <md-ripple></md-ripple>
-      </div>
-      <div class="card1" onclick="window.location.href = ('games/remastered.html')">
-        <img src="svg_bg/remastered.png" alt="Plus" style="width: 100%">
-        <div class="container">
-          <h4>
-            <b>Baldi's Basics Classic Remastered</b>
-          </h4>
-          <p class="md-typescale-body-large">Downloadable for Windows</p>
-        </div>
-        <md-ripple></md-ripple>
-      </div>
-    </div>
-    <style>
-      .card {
-        /* Add shadows to create the "card" effect */
-        border: 1.5px solid;
-        border-color: #cfcfcf;
-        border-radius: 5px;
-        transition: 0.3s;
-        width: 50%;
-        position: relative;
-      }
-
-      .cardreflex {
-        /* Add shadows to create the "card" effect */
-        border: 1.5px solid;
-        border-color: #cfcfcf;
-        border-radius: 5px;
-        transition: 0.3s;
-        width: 75%;
-        position: relative;
-      }
-
-      .card1 {
-        /* Add shadows to create the "card" effect */
-        border: 1.5px solid;
-        border-color: #cfcfcf;
-        border-radius: 5px;
-        transition: 0.3s;
-        width: 30%;
-        position: relative;
-        display: inline-block;
-        padding: 0rem 0rem;
-      }
-
-      .bbcards {
-        margin: 0rem;
-        padding: 0rem 0rem;
-      }
-
-      /* Add some padding inside the card container */
-      .container {
-        padding: 2px 16px;
-      }
-    </style>
-      <h1 class="md-typescale-display-medium">Merches</h1>
-      <p class="md-typescale-body-large">You can by T-Shirts, plushies and many more items!</p>
-    </div>
-    <div class="cardreflex" onclick="window.location.href = ('https://www.makeship.com/products/dr-reflex-plushie')">
-      <img src="accessories/dr_reflex_plushie_new.png" alt="Plus" style="width: 100%">
-      <div class="container">
-        <h4>
-          <b>Doctor Reflex Plushie! Available for limited time!</b>
-        </h4>
-        <p class="md-typescale-body-large">
-          Thiiiiiiiiiiiink... FAST!
-          <br><br>
-          Dr. Reflex is now making house calls! If you're in need of a checkup, Dr. Reflex's unique reflex testing methods are a sure way to heal what ails you. He may not have a license, but that doesn't mean you should be afraid of the included, attachable percussion hammer!
-          <br><br>
-          <a style="color: #00be10;">
-            Basically Games
-            <br>
-            Available until 28 Sep • 29,99US$
-          </a>
-        </p>
-      </div>
-      <md-ripple></md-ripple>
-    </div>
-    <div>
-      <img width="21%" onclick="window.location.href = ('https://store.baldisbasics.com/collections/featured/products/frenemies-baldi-collectible-plush-8-tall-series-1')" src="accessories/cards-plush1.png">
-      <img width="21%" style="margin-left: 15px;" onclick="window.location.href = ('https://store.baldisbasics.com/collections/featured/products/baldis-basics-bully-beanie-plush')" src="accessories/cards-plush2.png">
-      <img width="21%" style="margin-left: 15px;" onclick="window.location.href = ('https://store.baldisbasics.com/collections/featured/products/frenemies%E2%84%A2-doughmigos%E2%84%A2-baldi-super-squishy-collectible-plush-8-tall-series-2')" src="accessories/cards-plush3.png">
-      <img width="21%" style="margin-left: 15px;" onclick="window.location.href = ('https://store.baldisbasics.com/collections/featured/products/vintage-baldis-basics-logo-t-shirt-youth')" src="accessories/cards-shirt1.png">
-    </div>
-    <div>
-      <img width="21%" onclick="window.location.href = ('https://store.baldisbasics.com/collections/featured/products/math-youth-t-shirt')" src="accessories/cards-shirt2.png">
-      <img width="21%" style="margin-left: 15px;" onclick="window.location.href = ('https://store.baldisbasics.com/collections/featured/products/baldis-basics-collector-clips-mystery-pack-one-2-3-figure-series-1')" src="accessories/cards-toy1.png">
-      <img width="21%" style="margin-left: 15px;" onclick="window.location.href = ('https://store.baldisbasics.com/collections/featured/products/baldis-basics-buttons-4-pack-four-1-5-buttons-w-pins-series-1')" src="accessories/cards-toy2.png">
-    </div>
+    <p class="md-typescale-body-large">
+      More games coming soon...
+    </p>
   </form>
   <style>
     form {
@@ -403,3 +280,4 @@
   </div>
   <br><br><br><br><br><br><br><br><br>
 </body>
+</html>

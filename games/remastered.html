@@ -1,4 +1,21 @@
 <head>
+  <title>Baldi's Basics Classic Remastered</title>
+  <style>
+    body {transition: opacity ease-in 0.2s; }
+    body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; }
+  </style>
+  <script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.vi.NOGT10e0jag.O/m=client/rt=j/sv=1/d=1/ed=1/am=AAAg/rs=AHpOoo-hYQbmlkCoUvnnh5NFS9ZjiUq8mQ/cb=gapi.loaded_0?le=scs" nonce async></script>
+  <script data-id="_gd" nonce>
+    window.WIZ_global_data = {"TSDtV":"%.@.[[null,[[45630788,null,false,null,null,null,\"Icukze\"],[45427734,null,false,null,null,null,\"LWyDvc\"],[45648363,null,false,null,null,null,\"TV9SPb\"],[45611810,null,true,null,null,null,\"xo3fQd\"],[45618100,null,true,null,null,null,\"Rf6Ob\"],[45616206,null,true,null,null,null,\"cUJvHd\"],[45629341,null,true,null,null,null,\"d0dnWe\"],[45634391,null,false,null,null,null,\"sDLntb\"],[45616047,null,false,null,null,null,\"THDyn\"],[45427735,null,true,null,null,null,\"qwZbqf\"],[45427733,null,false,null,null,null,\"iyX4bd\"],[45620697,null,true,null,null,null,\"Sm4Z2\"]],\"CAMSBh0D2YicKg\\u003d\\u003d\"]]]","nQyAE":{}};
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPW1QSKFW4" nonce=""></script>
+  <script nonce>
+    window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}window['GA_TRACKING_ID'] = 'G-XPW1QSKFW4'; gtag('js', new Date()); gtag('config', window['GA_TRACKING_ID'], {'anonymize_ip': true, 'referrer' : document.referrer.split('?')[0], 'experiment_ids': '94816222,95117197', send_page_view: false,});
+  </script>
+  <script async src="https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js" nonce></script>
+  <script type="text/javascript" charset="UTF-8" nonce="" src="https://apis.google.com/js/client.js" gapi_processed="true"></script>
+  <script type="text/javascript" charset="UTF-8" nonce="" src="https://apis.google.com/js/client.js" gapi_processed="true"></script>
+  <link href="//fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;v=1724655460133" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <script type="importmap">
@@ -14,28 +31,121 @@
 
     document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
   </script>
-  <link rel="stylesheet" src="style.css">
-  <title>Baldi's Basics Classic Remastered</title>
   <link rel="icon" type="image/x-icon" href="remastered_logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/@material/ripple@14.0.0/dist/mdc.ripple.min.js"
+    integrity="sha384-9QANVmWxL3S8VRs8x1Q+bF1Zzogpy7P/Qw1+y5qHLdC1ig0EuoHg9VbB1SXyecdZ"
+    crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Fonts to support Material Design -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+  />
+  <!-- Icons to support Material Design -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- React and ReactDOM -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <!-- Babel for JSX transformation -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Material UI -->
+  <script src="https://unpkg.com/@mui/material/umd/material-ui.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@emotion/react/umd/emotion-react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@emotion/styled/umd/emotion-styled.development.js" crossorigin></script>
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
 <body>
+  <md-list style="--md-sys-color-surface: #f4fff3;">
+    <md-list-item>
+      <label class="md-typescale-body-large" style="font-size: 170%;">Baldi's Store</label>
+      <md-icon-button id="notifications" slot="end">
+        <md-icon>notifications</md-icon>
+      </md-icon-button>
+    </md-list-item>
+  </md-list>
+  <span style="position: relative">
+    <md-menu id="usage-menu" anchor="usage-anchor">
+      <md-menu-item>
+        <div slot="headline">Apple</div>
+      </md-menu-item>
+      <md-menu-item>
+        <div slot="headline">Banana</div>
+      </md-menu-item>
+      <md-menu-item>
+        <div slot="headline">Cucumber</div>
+      </md-menu-item>
+    </md-menu>
+  </span>
+  <script>
+    document.getElementById('usage-anchor').addEventListener('contextmenu', (event) => {
+      event.preventDefault();
+      openCustomMenu();
+    });
+  
+    function openCustomMenu() {
+      document.getElementById('usage-menu').open = true;
+    }
+  </script>
   <div>
-    <md-icon-button id="usage-anchor">
-      <md-icon>menu</md-icon>
-    </md-icon-button>
-    <label class="md-typescale-body-large" style="font-size: 170%; margin-left: 20px;">Baldi's Store</label>
-    <md-outlined-text-field id="search-field" name="q" style="--md-sys-color-primary: #00ca1b; margin-left: 355px; width: 600px;" type="search" placeholder="Search"></md-outlined-text-field>
-    <md-outlined-icon-button id="search-button" width="150%" style="margin-left: 10px;">
-      <md-icon>search</md-icon>
-    </md-outlined-icon-button>
-    <md-icon-button id="notifications" width="150%" style="margin-left: 400px;">
-      <md-icon>notifications</md-icon>
-    </md-icon-button>
-    <md-menu id="notif" anchor="notifications" style="--md-sys-color-surface-container: #edffef;">
-      <md-menu-item href="games/dev_logs/dev0.7.html">
-        <img slot="start" width="56px" src="https://baldstore.github.io/Baldi-Store/notif_plus.png"></md-icon>
+    <md-tabs id="fixed-tabs">
+      <md-primary-tab>
+        <md-icon slot="icon">home</md-icon>
+        Home
+      </md-primary-tab>
+      <md-primary-tab>
+        <md-icon slot="icon">stadia_controller</md-icon>
+        Games
+      </md-primary-tab>
+      <md-primary-tab>
+        <md-icon slot="icon">search</md-icon>
+        Search
+      </md-primary-tab>
+      <md-primary-tab>
+        <md-icon slot="icon">info</md-icon>
+        About
+      </md-primary-tab>
+    </md-tabs>
+  </div>
+    <style>
+      #fixed-tabs {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          z-index: 1000; /* Ensure it stays on top */
+          --md-sys-color-primary: #00be10;
+          --md-sys-color-surface: rgba( 203, 255, 206, 0.3 );
+          backdrop-filter: blur( 25px );
+          -webkit-backdrop-filter: blur( 25px );
+      }
+    </style>
+  </div>
+    <md-menu id="notif" anchor="notifications">
+      <md-menu-item>
+        <img slot="start" width="36px" src="notif_plus.png"></md-icon>
+        <div slot="headline">
+          <b>V0.7 is available now! + New Dr. Reflex plushie!</b>
+          <br>
+          09/09/2024
+          <br>
+          Hello everyone! I'm happy to announce that Baldi's 
+          <br>
+          Basics Plus version 0.7 is available now! 
+          <br><br>
+          <md-filled-button style="--md-sys-color-primary: #07d300;">Check out new update</md-filled-button>
+        </div>
+      </md-menu-item>
+      <md-divider></md-divider>
+      <md-menu-item href="https://baldstore.github.io/Baldi-Store/games/dev_logs/dev0.7.html">
+        <img slot="start" width="36px" src="notif_plus.png"></md-icon>
         <div slot="headline">
           <b>V0.7 Status Update</b>
           <br>
@@ -71,6 +181,14 @@
       </md-menu-item>
     </md-menu>
   </div>
+  <style>
+    #notif {
+      --md-sys-color-surface-container: rgba(203, 255, 206, 0.671);
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 12px );
+      -webkit-backdrop-filter: blur( 12px );
+    }
+  </style>
   <script type="module">
     // This example uses anchor as an ID reference
     const anchorEl = document.body.querySelector('#notifications');
@@ -88,26 +206,32 @@
         <md-list-item>
           Baldi's Basics Classic
           <img slot="start" style="width: 56px" src="BALclassic.png"></md-icon>
-          <md-outlined-button slot="end" href="games/classic.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/classic.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
         </md-list-item>
         <md-divider></md-divider>
         <md-list-item>
           Baldi's Basics Plus
           <img slot="start" style="width: 56px" src="BALplus.png"></md-icon>
-          <md-outlined-button slot="end" href="games/plus.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/plus.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
         </md-list-item>
         <md-divider></md-divider>
         <md-list-item>
           Baldi's Basics Birthday Bash
           <img slot="start" style="width: 56px" src="BALparty.png"></md-icon>
-          <md-outlined-button slot="end" href="games/404.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/404.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
         </md-list-item>
+        <md-divider></md-divider>
         <md-list-item>
           Baldi's Basics Classic Remastered
           <img slot="start" style="width: 56px" src="BALremastered.png"></md-icon>
-          <md-outlined-button slot="end" href="games/remastered.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/remastered.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
         </md-list-item>
         <md-divider></md-divider>
+        <md-list-item>
+          Baldi's Basics Plus Pre-release
+          <img slot="start" style="width: 56px" src="BALplus.png"></md-icon>
+          <md-outlined-button slot="end" href="https://baldstore.github.io/Baldi-Store/games/plus_k.html" style="--md-sys-color-primary:#00c403;">Details</md-outlined-button>
+        </md-list-item>
       </md-list>
     </form>
     <div slot="actions">
@@ -152,19 +276,14 @@
       dialogOther.close();
     });
   </script>
-  </div>
-    <md-menu id="usage-menu" anchor="usage-anchor" style="--md-sys-color-surface-container: #edffef;">
+    <md-menu id="usage-menu" anchor="usage-anchor">
       <md-menu-item>
-        <div slot="headline" type="button" href="https://baldstore.github.io/Baldi-Store/">Home</div>
-        <md-icon slot="start">home</md-icon>
-      </md-menu-item>
-      <md-menu-item>
-        <div slot="headline">Settings</div>
         <md-icon slot="start">settings</md-icon>
+        <div slot="headline">Settings</div>
       </md-menu-item>
-      <md-menu-item>
-        <div slot="headline" href="https://github.com/baldstore/Baldi-Store/">About</div>
+      <md-menu-item href="https://github.com/baldstore/Baldi-Store/">
         <md-icon slot="start">info</md-icon>
+        <div slot="headline">About</div>
       </md-menu-item>
     </md-menu>
   </div>
@@ -176,138 +295,333 @@
     anchorEl.addEventListener('click', () => { menuEl.open = !menuEl.open; });
   </script>
   </div>
-  <img src="inforemastered.svg" width="40%" style="margin-top: 25px; margin-left: 50px;"></img>
-  <br>
-  <md-filled-button id="openDialogButton" style="width: 1600px; margin-left: 50px; --md-sys-color-primary:#00c403;">Install</md-filled-button>
-  <form style="margin-left: 50px;">
-    <div>
-      <md-list style="width: 1590px; --md-sys-color-surface: #ffffff;">
-        <md-list-item>
-          About the game
-          <md-icon-button type="button" slot="end" style="width: 56px" href="https://baldstore.github.io/Baldi-Store/games/aboutclassic.html">
-            <md-icon>arrow_forward</md-icon>
-          </md-icon-button>
-        </md-list-item>
-      </md-list>
-    </div>
+  <form style="margin-left: 50px; margin-right: 50px;">
+    <img src="logos/remastered.png" width="11%">
+    <p class="md-typescale-display-medium" style="font-size: 210%;">Baldi's Basics Classic Remastered</p>
+    <a href="#" class="md-typescale-body-large" style="font-size: 120%; text-decoration: none; color:#00be10"><b>Basically Games</b></a>
+    <md-filled-button onclick="window.open('downloads/remastered.html')" style="--md-sys-color-primary:#00c403; width: 100%;">Install version 1.1</md-filled-button>
+    <style>
+      .appname {
+        margin: 1rem;
+        padding: 2rem 2rem;
+      }
+    </style>
+    <br>
+    <md-list style="width: 100%; height: 10%; --md-sys-color-surface: #ffffff;">
+      <md-list-item>
+        <b>About the game</b>
+        <md-icon-button slot="end" onclick="window.open('aboutremastered.html')">
+          <md-icon>arrow_forward</md-icon>
+        </md-icon-button>
+      </md-list-item>
+    </md-list>
     <p class="md-typescale-body-large">
-      <b>Welcome to Baldi's Basics in Education and Learning!</b>
-      <br>
-      <br>
+      Welcome to Baldi's Basics in Education and Learning!
+      <br><br>
       Baldi's Basics Classic Remastered is a survival horror stealth game that parodies cheap 90's edutainment and never takes itself too seriously. Explore Baldi's schoolhouse and try to find all 7 notebooks, but don't get caught by Baldi! He wants to play hide-and-seek, but something... Isn't right. Luckily you have a slew of items you can find and use to your advantage, but Baldi also has friends who can cause problems for you if you're not careful. And remember, Baldi hears every noise you make, so do what you can to stay quiet!
     </p>
-    <h2 class="md-typescale-body-large">Game information and requirements</h2>
-    <md-list style="width: 1550px; --md-sys-color-surface: #f8fffa;">
+    <md-list style="width: 100%; height: 10%; --md-sys-color-surface: #ffffff;">
       <md-list-item>
-        Version: 1.1
-        <md-icon slot="start" style="width: 56px">info</md-icon>
-      </md-list-item>
-      <md-list-item>
-        64-Bit hardware only; Installed Windows 7 (SP1+) or newer
-        <md-icon slot="start" style="width: 56px">computer</md-icon>
-      </md-list-item>
-      <md-list-item>
-        350 MB available  storage
-        <md-icon slot="start" style="width: 56px;">storage</md-icon>
-      </md-list-item>
-      <md-list-item>
-        DirectX 10+
-        <md-icon slot="start" style="width: 56px">developer_board</md-icon>
-      </md-list-item>
-      <md-list-item>
-        4GB RAM, 1.5 GHz processor or greater
-        <md-icon slot="start" style="width: 56px">memory</md-icon>
+        <b>Data security</b>
+        <br><br>
+        Safety starts with understanding how developers collect and share your data. Privacy and data protection practices may vary based on usage, region, and age. This information is provided by the developer and may be updated over time.
       </md-list-item>
     </md-list>
-    <p class="md-typescale-body-large" style="font-size: 110%;"><b>You can also check for other games</b></p>
-    <div>
-      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/classic.html')" src="cards/classic.png"></img>
-      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus.html')" style="margin-left: 10px;" src="cards/plus.png"></img>
-      <img width="20%" onclick="window.location.href = ('https://baldstore.github.io/Baldi-Store/games/plus_k.html')" style="margin-left: 10px;" src="cards/plus-pre.png"></img>
-    </div>
-    <p class="md-typescale-body-large" style="font-size: 110%;"><b>Screenshot</b></p>
-    <iframe src="screenshots/remastered.html" width="1500px" height="300px"></iframe>
-    <p class="md-typescale-body-large" style="font-size: 110%;"><b>Contact</b></p>
-    <md-list style="width: 1550px; --md-sys-color-surface: #f8fffa;">
+    <md-list style="width: 50%; height: 10%; --md-sys-color-surface: #ffffff; border: 1px solid; border-color: #dbdbdb; border-radius: 10px">
       <md-list-item>
-        Email: contact@basicallygames.com
-        <md-icon slot="start" style="width: 56px">contact_mail</md-icon>
+        Do not share data with third parties
+        <br>
+        <div>
+          <a class="md-typescale-body-large" onclick="window.location.href = ('https://support.google.com/googleplay?p=data-safety&hl=us')" style="color: #000000;"><u>Learn more</u></a> about how developers declare information about data sharing
+        </div>
+        <md-icon slot="start">share</md-icon>
       </md-list-item>
       <md-divider></md-divider>
       <md-list-item>
-        Administrator: Micah McGonigal (mystman12)
-        <md-icon slot="start" style="width: 56px">person</md-icon>
-      </md-list-item>
-      <md-divider></md-divider>
-      <md-list-item>
-        <label style="margin-left: 14px;">X (Twitter)</label>
-        <img slot="start" style="width: 30px; margin-left: 13px;" src="X_icon.svg">
-      </md-list-item>
-      <md-divider></md-divider>
-      <md-list-item>
-        basicallygames.com
-        <md-icon slot="start" style="width: 56px">public</md-icon>
+        No data collected
+        <br>
+        <div>
+          <a class="md-typescale-body-large" onclick="window.location.href = ('https://support.google.com/googleplay?p=data-safety&hl=us')" style="color: #000000;"><u>Learn more</u></a> about how developers declare information about data sharing
+        </div>
+        <md-icon slot="start">cloud_upload</md-icon>
       </md-list-item>
     </md-list>
-    <p class="md-typescale-body-large" style="font-size: 110%;"><b>Rating and comments</b></p>
-    <p class="md-typescale-body-large">Rating is currently unavailable...</p>
-<!-- Material 3 Dialog with Multiple Choices -->
-<md-dialog id="exampleDialog" style="background-color: #c7ffd5">
-  <div slot="headline">Choose your OS</div>
-    <div slot="content">
-      <md-radio-group>
-        <md-radio style="--md-sys-color-primary:#00c403;" id="option1" name="options">Option 1</md-radio>
-        <label for="option1">Download for Windows</label>
-        <br><br>
-        <md-radio style="--md-sys-color-primary:#00c403;" id="option2" name="options" value="Option 2">Option 2</md-radio>
-        <label for="option2">Linux (coming soon!)</label>
-        <br><br>
-        <md-radio style="--md-sys-color-primary:#00c403;" id="option3" name="options" value="Option 3">Option 3</md-radio>
-        <label for="option3">MacOS (coming soon!)</label>
-      </md-radio-group>
+    <md-list style="width: 100%; height: 10%; --md-sys-color-surface: #00d111; --md-sys-color-on-surface: #ffffff ; border-radius: 10px">
+      <md-list-item>
+        <b>Be the first one to get the demo updates</b>
+        <br>
+        <div>
+          <a class="md-typescale-body-large" href="kickstarter.html" style="color: #ffffff; position: relative;">
+            <u>Subscribe to the Kickstarter plan</u>
+            <md-ripple></md-ripple>
+          </a> 
+          at a price of $10 for lifetime or $3/month to get new pre-releases. Please be aware of SPOILERS.
+        </div>
+        <md-icon slot="start" style="color: #ffffff">new_releases</md-icon>
+      </md-list-item>
+    </md-list>
+    <md-list style="width: 100%; height: 10%; --md-sys-color-surface: #ffffff;">
+      <md-list-item>
+        <b>Screenshots</b>
+      </md-list-item>
+    </md-list>
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 5</div>
+          <img src="screenshots/remastered1.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 5</div>
+          <img src="screenshots/remastered2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 5</div>
+          <img src="screenshots/remastered3.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 5</div>
+          <img src="screenshots/remastered4.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
+          <img src="screenshots/remastered5.png" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <md-icon-button class="prev" onclick="plusSlides(-1)">
+        <md-icon>arrow_back</md-icon>
+      </md-icon-button>
+      <md-icon-button class="next" onclick="plusSlides(1)">
+        <md-icon>arrow_forward</md-icon>
+      </md-icon-button>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column" style="position: relative;">
+          <img class="demo cursor" src="screenshots/remastered1.png" style="width:100%; border-radius: 20px;" onclick="currentSlide(1)" alt="Greetings!">
+          <md-ripple></md-ripple>
+        </div>
+        <div class="column" style="position: relative; margin-left: 10px;">
+          <img class="demo cursor" src="screenshots/remastered2.png" style="width:100%; border-radius: 20px;" onclick="currentSlide(2)" alt="Try out party mode!">
+          <md-ripple></md-ripple>
+        </div>
+        <div class="column" style="position: relative; margin-left: 10px;">
+          <img class="demo cursor" src="screenshots/remastered3.png" style="width:100%; border-radius: 20px;" onclick="currentSlide(3)" alt="Get a taste of Baldi's Basics Plus with Demo Style!">
+          <md-ripple></md-ripple>
+        </div>
+        <div class="column" style="position: relative; margin-left: 10px;">
+          <img class="demo cursor" src="screenshots/remastered4.png" style="width:100%; border-radius: 20px;" onclick="currentSlide(4)" alt="You Can Think Pad!">
+          <md-ripple></md-ripple>
+        </div>
+        <div class="column" style="position: relative; margin-left: 10px;">
+          <img class="demo cursor" src="screenshots/remastered5.png" style="width:100%; border-radius: 20px;" onclick="currentSlide(5)" alt="Watch out... Pl-e-asee-DontP--laythis gam!3">
+          <md-ripple></md-ripple>
+        </div>
+      </div>
     </div>
-    <div slot="actions">
-      <md-text-button id="cancelButton" style="--md-sys-color-primary:#00c403;">Cancel</md-text-button>
-      <md-filled-button id="confirmButton" style="--md-sys-color-primary:#00c403;" onclick="window.open('https://drive.usercontent.google.com/download?id=1ZHhX_Jj92BD8U41hIY7pJ1IKJWj8pZDN&export=download&authuser=0')">Confirm</md-filled-tonal-button>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: #ffffff;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+    </style>
+    <md-list style="width: 100%; height: 10%; --md-sys-color-surface: #ffffff;">
+      <md-list-item>
+        <b>Other games by Basically Games</b>
+      </md-list-item>
+    </md-list>
+    <div class="bbcards">
+      <div class="card1" onclick="window.location.href = ('plus.html')">
+        <img src="svg_bg/plus.png" alt="Plus" style="width: 100%">
+        <div class="container">
+          <h4>
+            <b>Baldi's Basics Plus</b>
+          </h4>
+          <p class="md-typescale-body-large">Downloadable for Windows</p>
+        </div>
+        <md-ripple></md-ripple>
+      </div>
+      <div class="card1" onclick="window.location.href = ('classic.html')">
+        <img src="svg_bg/classic.png" alt="Plus" style="width: 100%">
+        <div class="container">
+          <h4>
+            <b>Baldi's Basics Classic Remastered</b>
+          </h4>
+          <p class="md-typescale-body-large">Downloadable for Windows</p>
+        </div>
+        <md-ripple></md-ripple>
+      </div>
     </div>
-  </md-dialog>
-  <style>
-    :root {
-      --md-sys-color-surface-container-high: #edffef;
-    }
-  </style>
-<script>
-  // Get references to the buttons and dialog
-  const openDialogButton = document.getElementById('openDialogButton');
-  const exampleDialog = document.getElementById('exampleDialog');
-  const cancelButton = document.getElementById('cancelButton');
-  const confirmButton = document.getElementById('confirmButton');
+    <div class="card1" onclick="window.location.href = ('remastered.html')">
+      <img src="svg_bg/plus.png" alt="Plus" style="width: 100%">
+        <div class="container">
+          <h4>
+            <b>Baldi's Basics Plus Pre-release</b>
+          </h4>
+          <p class="md-typescale-body-large">Unavailable for now. </p>
+        </div>
+        <md-ripple></md-ripple>
+      </div>
+    </div>
+    <style>
+      .card {
+        /* Add shadows to create the "card" effect */
+        border: 1.5px solid;
+        border-color: #cfcfcf;
+        border-radius: 5px;
+        transition: 0.3s;
+        width: 50%;
+        position: relative;
+      }
 
-  // Add event listener to the button to open the dialog
-  openDialogButton.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent the default action (e.g., form submission)
-    exampleDialog.show();
-  });
+      .cardreflex {
+        /* Add shadows to create the "card" effect */
+        border: 1.5px solid;
+        border-color: #cfcfcf;
+        border-radius: 35px;
+        transition: 0.3s;
+        width: 75%;
+        position: relative;
+      }
 
-  // Add event listeners to the Cancel and Confirm buttons to prevent page reload
-  cancelButton.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent the default action
-    exampleDialog.close();
-  });
+      .card1 {
+        /* Add shadows to create the "card" effect */
+        border: 1.5px solid;
+        border-color: #cfcfcf;
+        border-radius: 35px;
+        transition: 0.3s;
+        width: 30%;
+        position: relative;
+        display: inline-block;
+        padding: 0rem 0rem;
+      }
 
-  confirmButton.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent the default action
-    exampleDialog.close();
-    // Add any additional logic for the confirm action here
-  });
-</script>
-<br><br><br><br><br><br><br><br><br>
-<div style="margin-left: 50px;">
-  <label class="md-typescale-body-large">© 2024 MysteryGamer</label>
-  <md-text-button  style="margin-left: 1000px; --md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Legal</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Services</md-text-button>
-  <md-text-button style="--md-sys-color-primary: #000000;" type="button" href="legaldoc.html">Terms of Uses</md-text-button>
-</div>
+      .bbcards {
+        margin: 0rem;
+        padding: 0rem 0rem;
+      }
+
+      /* Add some padding inside the card container */
+      .container {
+        padding: 2px 16px;
+      }
+    </style>
+  </form>
   <style>
     form {
       display: flex;
@@ -317,4 +631,5 @@
     }
   </style>
   </div>
+  <br><br><br><br><br><br><br><br><br>
 </body>
